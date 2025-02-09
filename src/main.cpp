@@ -23,7 +23,9 @@ RECORDER_STATUS wmain(int argc, const wchar_t** argv)
 
 	desk_capture_params_t dp;
 
-	dp.path   = argv[1];
+	std::wstring path{ argv[1] };
+
+	dp.path = utils::getFileExtension(path) == L".mp4" ? path : path += L".mp4";
 	dp.fps    = DEFAULT_FPS;
 	dp.cursor = DEFAULT_CURSOR_ENABLE;
 	dp.ms     = utils::convertTimeStringToInt(argv[2]);

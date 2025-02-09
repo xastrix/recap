@@ -33,3 +33,13 @@ int utils::convertTimeStringToInt(const std::wstring& string)
 		return num;
 	}
 }
+
+std::wstring utils::getFileExtension(const std::wstring& filename)
+{
+	std::wstring::size_type dot_pos = filename.find_last_of('.');
+
+	if (dot_pos != std::wstring::npos)
+		return filename.substr(dot_pos + 1);
+
+	return L"";
+}
