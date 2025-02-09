@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\recorder\include\recorder.h">
+      <Filter>Dependencies\recorder\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\config.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\utils.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{49db08bf-5f06-40e0-b2c2-e9f3c998974f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{0e6ef01b-1b4d-4519-bb5f-73369a6749fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{718ca4b7-4336-4088-83e1-ddb045bb4ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\recorder">
+      <UniqueIdentifier>{ec58c875-a178-40fb-930f-5a3d8439b777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\recorder\include">
+      <UniqueIdentifier>{183ffe4c-1091-4f51-a2a9-1b8d51751b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\recorder\lib">
+      <UniqueIdentifier>{4620682a-0dc2-4a6e-81e8-f1051ff6805e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\recorder\lib\x64">
+      <UniqueIdentifier>{8e22618f-6124-44b1-a9aa-0aa790d9b974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\recorder\lib\x86">
+      <UniqueIdentifier>{32fbc1ff-d6fc-4289-a10d-7fb51fcd80e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\recorder\lib\x86\recorder_x86.lib">
+      <Filter>Dependencies\recorder\lib\x86</Filter>
+    </Library>
+    <Library Include="..\recorder\lib\x64\recorder_x64.lib">
+      <Filter>Dependencies\recorder\lib\x64</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
